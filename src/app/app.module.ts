@@ -6,7 +6,7 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 
 // Proxy
-import { MiracleListProxy } from './Services/MiracleListProxy';
+import { MiracleListProxy } from '../Services/MiracleListProxy';
 // MomentJS
 import * as moment from 'moment';
 import 'moment/locale/de';
