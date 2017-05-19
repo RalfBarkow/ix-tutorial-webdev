@@ -21,4 +21,18 @@ import 'moment/locale/de';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+/**
+ *
+ */
+constructor() {
+
+ // Sprache für momentJS auf aktuelle Browsersprache setzen
+ // moment.locale(window.navigator.language);
+ // oder feste Sprache:
+ moment.locale("de-de");
+
+}
+
+}
