@@ -9,6 +9,8 @@ import { AppComponent } from './app.component';
 import * as moment from 'moment';
 import 'moment/locale/de';
 
+import {MomentModule} from 'angular2-moment/moment.module';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -16,7 +18,8 @@ import 'moment/locale/de';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    MomentModule
   ],
   providers: [],
   bootstrap: [AppComponent]
