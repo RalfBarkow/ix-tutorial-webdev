@@ -13,17 +13,36 @@ import 'moment/locale/de';
 
 import {MomentModule} from 'angular2-moment/moment.module';
 
+// eigene Komponenten
+import { LoginComponent } from '../Login/Login.Component'
+import { SubTaskListComponent } from '../SubTaskList/SubTaskList.Component'
+import { TaskEditComponent } from '../TaskEdit/TaskEdit.Component'
+import { TaskViewComponent } from '../TaskView/TaskView.Component'
+
+// Routing
+import { Router } from '@angular/router'
+import { RoutingModule } from '../Util/RoutingModule'
+
+// Kommunikation
+import { CommunicationService } from '../Services/CommunicationService'
+
 @NgModule({
-  declarations: [
-    AppComponent
+  declarations: [ // Komponenten und Pipes
+    AppComponent,
+    LoginComponent,
+    SubTaskListComponent,
+    TaskEditComponent, 
+    TaskViewComponent
   ],
-  imports: [
+  imports: [ // Angular-Module
     BrowserModule,
     FormsModule,
     HttpModule,
-    MomentModule
+    MomentModule,
+    RoutingModule
   ],
-  providers: [MiracleListProxy],
+  providers: [ // Services / Dependency Injection 
+    MiracleListProxy, CommunicationService],
   bootstrap: [AppComponent]
 })
 export class AppModule {
