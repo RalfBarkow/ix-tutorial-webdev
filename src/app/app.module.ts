@@ -13,6 +13,14 @@ import 'moment/locale/de';
 
 import {MomentModule} from 'angular2-moment/moment.module';
 
+// Eigene Pipes
+import {LineBreakPipe} from "../Util/LineBreakPipe"
+import {ImportancePipe} from "../Util/ImportancePipe"
+// Kontextmenü (Angular-Modul)
+import { ContextMenuModule } from '../Util/angular2-contextmenu/angular2-contextmenu';
+// Datetime-Direktive
+import { NKDatetimeModule } from 'ng2-datetime/ng2-datetime';
+
 // eigene Komponenten
 import { LoginComponent } from '../Login/Login.Component'
 import { SubTaskListComponent } from '../SubTaskList/SubTaskList.Component'
@@ -29,6 +37,8 @@ import { CommunicationService } from '../Services/CommunicationService'
 @NgModule({
   declarations: [ // Komponenten und Pipes
     AppComponent,
+    ImportancePipe,
+    LineBreakPipe,
     LoginComponent,
     SubTaskListComponent,
     TaskEditComponent, 
@@ -39,6 +49,7 @@ import { CommunicationService } from '../Services/CommunicationService'
     FormsModule,
     HttpModule,
     MomentModule,
+    NKDatetimeModule,
     RoutingModule
   ],
   providers: [ // Services / Dependency Injection 
