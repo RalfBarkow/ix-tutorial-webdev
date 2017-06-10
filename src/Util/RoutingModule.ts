@@ -10,6 +10,8 @@ import { AppComponent } from "../app/app.component"
 // import { TaskTableComponent } from '../TaskTable/TaskTable.component';
 
 // URLs festlegen
+//FIXME router configuration
+// https://angular.io/docs/ts/latest/api/router/index/Routes-type-alias.html
 const routes: Routes = [
  { path: 'app', component: AppComponent,
   children: [
