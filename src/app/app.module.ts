@@ -22,7 +22,6 @@ import { ContextMenuModule } from '../Util/angular2-contextmenu/angular2-context
 import { NKDatetimeModule } from 'ng2-datetime/ng2-datetime';
 
 // eigene Komponenten
-import { LoginComponent } from '../Login/Login.Component'
 import { SubTaskListComponent } from '../SubTaskList/SubTaskList.Component'
 import { TaskEditComponent } from '../TaskEdit/TaskEdit.Component'
 import { TaskViewComponent } from '../TaskView/TaskView.Component'
@@ -39,7 +38,6 @@ import { CommunicationService } from '../Services/CommunicationService'
     AppComponent,
     ImportancePipe,
     LineBreakPipe,
-    LoginComponent,
     SubTaskListComponent,
     TaskEditComponent, 
     TaskViewComponent
